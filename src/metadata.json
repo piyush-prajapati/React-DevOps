@@ -1,0 +1,24 @@
+{
+  "profiles": [
+    "System Administrator",
+    "Standard Platform User",
+    "Standard User",
+    "Solution Manager",
+    "Marketing User"
+  ],
+  "objectList": ["Master Address", "Store", "NOC", "Market", "Region"],
+  "lwcList": [
+    "ChartDemo",
+    "QueryBuilder",
+    "OrderRegister",
+    "CreateNewAccount",
+    "MultiSelect"
+  ],
+  "apexClass": [
+    "ChartController",
+    "QueryController",
+    "ChartControllerTest",
+    "QueryControllerTest",
+    "OpportunityController"
+  ]
+}

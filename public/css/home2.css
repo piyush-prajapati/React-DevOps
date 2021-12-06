@@ -4530,8 +4530,11 @@
 
   .list-card{
     flex: 1 1 auto;
-    min-height: 1px;
+    min-height: 50vh;
     padding: .5rem;
+    height: 56vh;
+    overflow:auto;
+    overflow-x: hidden;
   }
 
   .hover-none a{
@@ -11301,7 +11304,7 @@
   .right-list-item{
     color: inherit;
     font-size: 0.9rem;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
 
   .components-item{
@@ -11310,4 +11313,16 @@
 
   .cusrsor-pointer-class{
     cursor: pointer;
+  }
+
+  .right-apex, .right-lwc, .right-custom-object{
+    display: none;
+  }
+
+  .component-list{
+    margin-left: 20px;
+  }
+
+  #deployment-card{
+    display: none;
   }

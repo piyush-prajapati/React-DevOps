@@ -1,5 +1,5 @@
-import Mslogo from "./mslogo.png";
-import "./login2.css";
+import Mslogo from "../mslogo.png";
+import "../css/login.css";
 
 function login() {
   return (
@@ -7,31 +7,31 @@ function login() {
       <div id="page-top">
         {/* Navigation */}
         <div
-          className="navbar navbar-expand-lg navbar-dark fixed-top"
+          className="navbarl navbarl-expand-lg navbarl-dark fixed-top"
           id="mainNav"
         >
           <div className="container">
             <a
-              className="navbar-brand"
+              className="navbarl-brand"
               href="#page-top"
               style={{ fontFamily: "Estonia, cursive", fontSize: "3rem" }}
             >
               Blaze Deploy
             </a>
             <button
-              className="navbar-toggler"
+              className="navbarl-toggler"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarResponsive"
-              aria-controls="navbarResponsive"
+              data-bs-target="#navbarlResponsive"
+              aria-controls="navbarlResponsive"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
               Menu
               <i className="fas fa-bars ms-1"></i>
             </button>
-            <div className="collapse navbar-collapse" id="navbarResponsive">
-              <ul className="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <div className="collapse navbarl-collapse" id="navbarlResponsive">
+              <ul className="navbarl-nav text-uppercase ms-auto py-4 py-lg-0">
                 {/* <li className="nav-item"><a className="nav-link" href="#services">Services</a></li>
                         <li className="nav-item"><a className="nav-link" href="#contact">Contact</a></li> */}
                 <li className="nav-item">
@@ -45,14 +45,14 @@ function login() {
         </div>
       </div>
 
-      <header class="masthead">
+      <header class="mastheadl">
         <div class="container">
-          <div class="masthead-subheading">Lightning Fast Deployments!</div>
-          <div class="masthead-heading text-uppercase">
+          <div class="mastheadl-subheading">Lightning Fast Deployments!</div>
+          <div class="mastheadl-heading text-uppercase">
             Good Bye Change Sets
           </div>
           <a
-            class="btn btn-primary btn-xl text-uppercase"
+            class="btnl btnl-primary btnl-xl text-uppercase"
             href="/login/salesforce"
           >
             Log In with Salesforce
@@ -106,19 +106,19 @@ function login() {
           <div class="row align-items-center">
             <div class="col-6 my-3 my-lg-0">
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btnl btnl-dark btnl-social mx-2"
                 href="https://twitter.com/mandsconsulting"
               >
                 <i class="fab fa-twitter"></i>
               </a>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btnl btnl-dark btnl-social mx-2"
                 href="https://www.facebook.com/mandsconsulting/"
               >
                 <i class="fab fa-facebook-f"></i>
               </a>
               <a
-                class="btn btn-dark btn-social mx-2"
+                class="btnl btnl-dark btnl-social mx-2"
                 href="https://www.linkedin.com/company/m&s-consulting"
               >
                 <i class="fab fa-linkedin-in"></i>
@@ -138,24 +138,24 @@ function login() {
       </footer>
 
       {window.addEventListener("DOMContentLoaded", (event) => {
-        // Navbar shrink function
-        var navbarShrink = function () {
-          const navbarCollapsible = document.body.querySelector("#mainNav");
-          if (!navbarCollapsible) {
+        // navbarl shrink function
+        var navbarlShrink = function () {
+          const navbarlCollapsible = document.body.querySelector("#mainNav");
+          if (!navbarlCollapsible) {
             return;
           }
           if (window.scrollY === 0) {
-            navbarCollapsible.classList.remove("navbar-shrink");
+            navbarlCollapsible.classList.remove("navbarl-shrink");
           } else {
-            navbarCollapsible.classList.add("navbar-shrink");
+            navbarlCollapsible.classList.add("navbarl-shrink");
           }
         };
 
-        // Shrink the navbar
-        navbarShrink();
+        // Shrink the navbarl
+        navbarlShrink();
 
-        // Shrink the navbar when page is scrolled
-        document.addEventListener("scroll", navbarShrink);
+        // Shrink the navbarl when page is scrolled
+        document.addEventListener("scroll", navbarlShrink);
 
         {
           /* // Activate Bootstrap scrollspy on the main nav element
@@ -168,15 +168,15 @@ function login() {
         } */
         }
 
-        // Collapse responsive navbar when toggler is visible
-        const navbarToggler = document.body.querySelector(".navbar-toggler");
+        // Collapse responsive navbarl when toggler is visible
+        const navbarlToggler = document.body.querySelector(".navbarl-toggler");
         const responsiveNavItems = [].slice.call(
-          document.querySelectorAll("#navbarResponsive .nav-link")
+          document.querySelectorAll("#navbarlResponsive .nav-link")
         );
         responsiveNavItems.map(function (responsiveNavItem) {
           responsiveNavItem.addEventListener("click", () => {
-            if (window.getComputedStyle(navbarToggler).display !== "none") {
-              navbarToggler.click();
+            if (window.getComputedStyle(navbarlToggler).display !== "none") {
+              navbarlToggler.click();
             }
           });
         });
